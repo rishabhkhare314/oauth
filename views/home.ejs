@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>OAuth Task</title>
+
+    <style>
+      .btn {
+    margin-top: 15px;
+  }
+
+  .signIn {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 2px 0px rgb(168, 167, 167);
+  }
+
+  .signIn label {
+    margin: 1px;
+  }
+
+  .signIn .form-group {
+    margin-bottom: 10px;
+  }
+
+  .signIn a {
+    text-decoration: none;
+  }
+
+  .login-card {
+    width: 300px;
+    height: 45px;
+    margin: auto;
+    background-color: teal;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 0 2px black;
+  }
+
+  #facebook {
+    background-color: rgb(12, 12, 247);
+  }
+
+  #github {
+    background-color: rgb(38, 38, 39);
+  }
+
+  #google {
+    background-color: #fff;
+    color: black;
+  }
+    </style>
+  </head>
+
+  <body>
+    <div class="row signIn">
+      <div class="col-md-6 col-sm-12">
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="">Email: </label>
+            <input
+              type="email"
+              autofocus
+              name="email"
+              class="form-control"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Password: </label>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-check d-flex justify-content-between">
+            <div>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Remember me</label
+              >
+            </div>
+            <div>
+              <a href="">Forget Password?</a>
+            </div>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-block btn-success">
+            Log In
+          </button>
+            
+        </form>
+        <a href="/signup">
+            <button type="submit" class="btn btn-block btn-info">
+              Create new Account
+            </button>
+            </a>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <a href="/auth/facebook">
+          <div class="login-card" id="facebook">
+            <i class="fab fa-facebook fa-2x"></i>
+            Log In with Facebook
+          </div> </a
+        ><br />
+        <a href="/auth/google">
+          <div class="login-card" id="google">
+            <i class="fab fa-google fa-2x"></i>
+            Log In with Google
+          </div> </a
+        ><br />
+        <a href="/auth/github">
+          <div class="login-card" id="github">
+            <i class="fab fa-github fa-2x"></i>
+            Log In with Github
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

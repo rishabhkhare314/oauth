@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../public/CSS/style.css" />
+    <title>OAuth Task</title>
+
+    <style>
+        .btn {
+    margin-top: 15px;
+  }
+  .signUpPage{
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    min-height: 400px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px gray;
+    border-radius: 3px;
+}
+.signUpPage label{
+    margin-bottom: 0px;
+}
+
+@media(max-width: 444px){
+    .signUpPage{
+        width: 320px;
+    }
+}
+
+
+        </style>
+</head>
+<body>
+    <div class="signUpPage">
+        <h4 class="text-center">Sign Up</h4>
+        <form action="/users/signUp" method="post">
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="">Confirm Password</label>
+            <input type="password" class="form-control" name="cpassword" placeholder="Confirm Password">
+          </div>
+          <button type="submit" class="btn btn-block btn-primary">Register</button>
+        </form>
+        <br>
+        <a href="/">If already register</a>
+      </div>
+      </div>
+</body>
+</html>

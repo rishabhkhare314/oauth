@@ -1,0 +1,49 @@
+.btn {
+    margin-top: 15px;
+  }
+
+  .signIn {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 2px 0px rgb(168, 167, 167);
+  }
+
+  .signIn label {
+    margin: 1px;
+  }
+
+  .signIn .form-group {
+    margin-bottom: 10px;
+  }
+
+  .signIn a {
+    text-decoration: none;
+  }
+
+  .login-card {
+    width: 300px;
+    height: 45px;
+    margin: auto;
+    background-color: teal;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 0 2px black;
+  }
+
+  #facebook {
+    background-color: rgb(12, 12, 247);
+  }
+
+  #github {
+    background-color: rgb(38, 38, 39);
+  }
+
+  #google {
+    background-color: #fff;
+    color: black;
+  }
